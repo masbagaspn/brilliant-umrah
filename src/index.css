@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-title {
+    @apply text-2xl font-display font-bold md:text-3xl lg:text-4xl;
+  }
+
+  .paragraph {
+    @apply text-sm font-baloo md:text-base lg:text-lg;
+  }
+
+  .detail-title {
+    @apply text-sm text-blue-primary font-semibold;
+  }
+
+  .detail-hotel-text {
+    @apply text-lg text-black;
+  }
+
+  .p-td {
+    @apply px-4 py-3;
+  }
+}
+
+.custom-scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: #203863 #fff;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #203863;
+  border-radius: 40px;
+  border: 5px solid #fff;
+}
