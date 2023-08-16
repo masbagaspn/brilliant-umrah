@@ -5,7 +5,15 @@ const packages = [
     packages: [
       {
         name: "Paket A",
-        schedule: ["28 Agustus 2023", "25 September 2023", "23 Oktober 2023"],
+        schedule: [
+          "28 Agustus 2023",
+          "25 September 2023",
+          "23 Oktober 2023",
+          "27 November 2023",
+          "11 Desember 2023",
+          "25 Desember 2023",
+          "22 Januari 2024",
+        ],
         makkah: "Sofwa Royal Dar Eiman",
         madinah: "Royal Al Madinah",
         dubai: null,
