@@ -1,6 +1,11 @@
 import clsx from "clsx";
 import { useContext, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { PiAirplaneTakeoffBold, PiAirplaneTiltBold } from "react-icons/pi";
+import {
+  HiOutlineBuildingOffice2,
+  HiOutlineCalendarDays,
+} from "react-icons/hi2";
 import { AppContext } from "../../App";
 
 const PackageModal = () => {
@@ -35,7 +40,7 @@ const PackageModal = () => {
         transition={{
           duration: 0.25,
         }}
-        className="w-screen h-full bg-white flex flex-col lg:w-2/3"
+        className="w-screen h-full bg-white flex flex-col lg:w-4/5"
       >
         <header className="sticky top-0 flex justify-between items-center p-8 bg-white drop-shadow-md">
           <h2 className="text-2xl font-display font-bold w-2/3">
@@ -88,10 +93,15 @@ const PackageModal = () => {
 
           <div className="flex flex-col gap-4">
             {/* package details */}
-            <div className="flex flex-col gap-4 border-b-2 border-blue-primary p-4">
+            <div
+              className={clsx(
+                "flex flex-col gap-4 border-b-2 border-blue-primary py-2",
+                { "border-opacity-10": isDetailOpen === true }
+              )}
+            >
               <div
                 onClick={() => setIsDetailOpen(!isDetailOpen)}
-                className="w-full flex justify-between items-center cursor-pointer"
+                className="w-full flex justify-between items-center cursor-pointer hover:opacity-70"
               >
                 <h3 className="text-lg font-bold text-blue-primary py-1">
                   Detail Paket
@@ -123,7 +133,10 @@ const PackageModal = () => {
                     className="flex flex-col gap-8 overflow-hidden"
                   >
                     <div className="flex flex-col gap-2">
-                      <h4 className="detail-title">Jadwal Keberangkatan</h4>
+                      <h4 className="detail-title">
+                        <HiOutlineCalendarDays />
+                        Jadwal Keberangkatan
+                      </h4>
                       <div className="flex gap-3 flex-wrap">
                         {selected.schedule.map((s) => (
                           <div
@@ -137,33 +150,68 @@ const PackageModal = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="flex flex-col gap-2">
-                        <h4 className="detail-title">Hotel Mekkah</h4>
+                        <h4 className="detail-title">
+                          <HiOutlineBuildingOffice2 />
+                          Hotel Mekkah
+                        </h4>
                         <p className="detail-hotel-text">{selected.makkah}</p>
                       </div>
                       <div className="flex flex-col gap-2">
-                        <h4 className="detail-title">Hotel Madinah</h4>
+                        <h4 className="detail-title">
+                          <HiOutlineBuildingOffice2 />
+                          Hotel Madinah
+                        </h4>
                         <p className="detail-hotel-text">{selected.madinah}</p>
                       </div>
                       {selected?.dubai !== null && (
                         <div className="flex flex-col gap-2">
-                          <h4 className="detail-title">Hotel Dubai</h4>
+                          <h4 className="detail-title">
+                            <HiOutlineBuildingOffice2 />
+                            Hotel Dubai
+                          </h4>
                           <p className="detail-hotel-text">{selected.dubai}</p>
                         </div>
                       )}
                       {selected?.amman !== null && (
                         <div className="flex flex-col gap-2">
-                          <h4 className="detail-title">Hotel Amman</h4>
+                          <h4 className="detail-title">
+                            <HiOutlineBuildingOffice2 />
+                            Hotel Amman
+                          </h4>
                           <p className="detail-hotel-text">{selected.amman}</p>
                         </div>
                       )}
                       {selected?.palestine !== null && (
                         <div className="flex flex-col gap-2">
-                          <h4 className="detail-title">Hotel Palestine</h4>
+                          <h4 className="detail-title">
+                            <HiOutlineBuildingOffice2 />
+                            Hotel Palestine
+                          </h4>
                           <p className="detail-hotel-text">
                             {selected.palestine}
                           </p>
                         </div>
                       )}
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex flex-col gap-2">
+                        <h4 className="detail-title">
+                          <PiAirplaneTiltBold />
+                          Keberangkatan
+                        </h4>
+                        <span className="detail-hotel-text">
+                          {selected.keberangkatan}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <h4 className="detail-title">
+                          <PiAirplaneTakeoffBold />
+                          Maskapai
+                        </h4>
+                        <span className="detail-hotel-text">
+                          {selected.maskapai}
+                        </span>
+                      </div>
                     </div>
                   </motion.div>
                 )}
@@ -171,12 +219,17 @@ const PackageModal = () => {
             </div>
 
             {/* itenerary */}
-            <div className="flex flex-col gap-4 border-b-2 border-blue-primary p-4">
+            <div
+              className={clsx(
+                "flex flex-col gap-4 border-b-2 border-blue-primary py-2",
+                { "border-opacity-0": isIteneraryOpen === true }
+              )}
+            >
               <div
                 onClick={() => setIsIteneraryOpen(!isIteneraryOpen)}
-                className="w-full flex justify-between items-center cursor-pointer"
+                className="w-full flex justify-between items-center cursor-pointer hover:opacity-70"
               >
-                <h3 className="text-lg font-bold text-blue-primary py-1">
+                <h3 className="text-lg font-bold text-blue-primary">
                   Itenerary
                 </h3>
                 <span>
@@ -203,16 +256,40 @@ const PackageModal = () => {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ ease: "easeIn" }}
-                    className="w-full flex flex-col rounded-lg border border-blue-primary"
+                    className={
+                      "w-full flex flex-col rounded-lg border border-blue-primary overflow-hidden"
+                    }
                   >
+                    <div className="w-full bg-blue-secondary border-b border-blue-primary hidden lg:flex">
+                      <span className="w-[20%] p-td border-r border-blue-primary">
+                        Hari
+                      </span>
+                      <span className="w-[30%] p-td border-r border-blue-primary">
+                        Kota
+                      </span>
+                      <span className="w-[50%] p-td">Program</span>
+                    </div>
                     {selected.itenerary.map((i, idx) => (
                       <div
                         key={idx}
-                        className="flex flex-col p-td border-b border-blue-primary/30"
+                        className={clsx(
+                          "flex flex-col p-td border-b border-blue-primary/30 gap-2",
+                          "lg:w-full lg:flex-row lg:p-0 lg:gap-0"
+                        )}
                       >
-                        <span>{`Hari ${i.day}`}</span>
-                        <span>{i.kota}</span>
-                        <span>{i.program}</span>
+                        <span className="lg:w-[20%] lg:p-td border-r border-blue-primary">{`Hari ${i.day}`}</span>
+                        <span className="flex flex-col lg:w-[30%] lg:p-td border-r border-blue-primary">
+                          <span className="text-medium opacity-50 lg:hidden">
+                            Kota
+                          </span>
+                          <span>{i.kota}</span>
+                        </span>
+                        <span className="flex flex-col lg:w-[50%] lg:p-td">
+                          <span className="text-medium opacity-50 lg:hidden">
+                            Program
+                          </span>
+                          <span>{i.program}</span>
+                        </span>
                       </div>
                     ))}
                   </motion.div>

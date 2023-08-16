@@ -31,7 +31,7 @@ const Packages = () => {
             <img
               src={p.thumbnail}
               alt={`Flyer ${p.name}`}
-              className="w-full h-auto aspect-[3/2] object-center rounded-md bg-red-50"
+              className="w-full h-auto aspect-[3/2] object-cover object-center rounded-md"
             />
             <div className="flex flex-col gap-2">
               <h3 className="text-sm font-medium md:text-base lg:text-lg">

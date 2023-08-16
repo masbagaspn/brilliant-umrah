@@ -12,7 +12,7 @@
   }
 
   .detail-title {
-    @apply text-sm text-blue-primary font-semibold;
+    @apply text-sm text-blue-primary font-semibold inline-flex gap-2 items-center;
   }
 
   .detail-hotel-text {
@@ -22,6 +22,10 @@
   .p-td {
     @apply px-4 py-3;
   }
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .custom-scrollbar {

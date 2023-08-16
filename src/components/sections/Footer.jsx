@@ -1,4 +1,8 @@
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { HiOutlineMail } from "react-icons/hi";
+import { RiInstagramLine } from "react-icons/ri";
 import socials from "../../content/socials";
+import clsx from "clsx";
 
 const Footer = () => {
   return (
@@ -18,18 +22,38 @@ const Footer = () => {
       </div>
       <div className="w-full items-center justify-center hidden lg:flex">
         <img
-          src="/assets/images/logo/logo-briliant.png"
+          src="/assets/images/logo/logo-briliant-putih.png"
           className="w-32 h-auto"
         />
       </div>
       <div className="p-8 flex flex-col gap-4">
         <span className="uppercase font-medium">Kontak Kami</span>
         <div className="flex flex-col gap-2">
-          {socials.map((soc) => (
-            <a key={soc.name}>
-              <span>{soc.text}</span>
-            </a>
-          ))}
+          {socials.map((soc) =>
+            soc.name !== "phone" ? (
+              <a
+                href={soc.link}
+                target={"_blank"}
+                key={soc.name}
+                className={clsx("inline-flex gap-2 items-center", {
+                  "hover:opacity-30 cursor-pointer": soc.name !== "phone",
+                })}
+                rel="noreferrer"
+              >
+                {soc.name === "instagram" ? (
+                  <RiInstagramLine />
+                ) : (
+                  <HiOutlineMail />
+                )}
+                <span>{soc.text}</span>
+              </a>
+            ) : (
+              <span key={soc.name} className="inline-flex items-center gap-2">
+                <HiOutlineDevicePhoneMobile />
+                {soc.text}
+              </span>
+            )
+          )}
         </div>
       </div>
     </footer>

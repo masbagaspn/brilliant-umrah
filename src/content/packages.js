@@ -1,7 +1,7 @@
 const packages = [
   {
     name: "Paket Ekslusif 12 Hari",
-    thumbnail: "/assets/images/thumbnail.jpg",
+    thumbnail: "/assets/images/eksklusif.jpg",
     packages: [
       {
         name: "Paket A",
@@ -170,6 +170,9 @@ const packages = [
         schedule: ["16 Oktober", "13 November 2023"],
         makkah: "Grand Al Masa",
         madinah: "Royal Madinah",
+        dubai: null,
+        amman: null,
+        palestine: null,
         maskapai: "Lion Air",
         keberangkatan: "SUB - MED",
         price: "33.200.000,00",
@@ -241,6 +244,9 @@ const packages = [
         schedule: ["25 September 2023"],
         makkah: "Al Miqot",
         madinah: "Royal Madinah",
+        dubai: null,
+        amman: null,
+        palestine: null,
         maskapai: "Garuda Indonesia",
         keberangkatan: "SUB - JED",
         price: "33.200.000,00",
@@ -543,7 +549,7 @@ const packages = [
   },
   {
     name: "Paket Reguler 12 Hari Plus Dubai",
-    thumbnail: "/assets/images/thumbnail.jpg",
+    thumbnail: "/assets/images/dubai.jpg",
     packages: [
       {
         name: "Paket A",
@@ -623,16 +629,16 @@ const packages = [
   },
   {
     name: "Paket Reguler 15 Hari Plus Aqsho",
-    thumbnail: "/assets/images/thumbnail.jpg",
+    thumbnail: "/assets/images/al-aqsa.jpg",
     packages: [
       {
         name: "Paket A",
         schedule: ["19 Oktober 2023"],
-        makkah: "Azka/Anjum/Setaraf",
+        makkah: "Azka / Anjum / Setaraf",
         madinah: "Durat Al Eimah",
         dubai: null,
         amman: "Olive Tree",
-        palestine: "Nationa/New Capital",
+        palestine: "National / New Capital",
         maskapai: "Oman Air",
         keberangkatan: "Jakarta (CGK)",
         price: "54.375.750,00",

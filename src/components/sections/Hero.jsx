@@ -16,9 +16,12 @@ const Hero = () => {
           Allah tidak memanggil orang yang mampu, <br />
           tetapi Allah memampukan orang yang terpanggil.
         </p>
-        <button className="w-fit text-sm px-4 py-2 bg-blue-primary rounded-full uppercase font-baloo">
+        <a
+          href="#copy-section"
+          className="w-fit text-sm px-4 py-2 bg-blue-primary rounded-full uppercase font-baloo"
+        >
           Pelajari Lebih Lanjut
-        </button>
+        </a>
       </div>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img

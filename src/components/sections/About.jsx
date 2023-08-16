@@ -9,7 +9,7 @@ const About = () => {
       )}
     >
       <img
-        src="/assets/images/logo/logo-briliant.png"
+        src="/assets/images/logo/logo-briliant-putih.png"
         alt="logo"
         className="w-12 h-auto lg:w-20"
       />

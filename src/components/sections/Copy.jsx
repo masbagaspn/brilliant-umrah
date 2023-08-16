@@ -3,6 +3,7 @@ import clsx from "clsx";
 const Copy = () => {
   return (
     <section
+      id="copy-section"
       className={clsx(
         "w-full h-fit flex flex-col px-8 py-12 bg-blue-secondary md:flex-row lg:px-20 gap-6",
         "bg-[url('/assets/images/bg-white.png')] bg-top bg-cover bg-no-repeat"
