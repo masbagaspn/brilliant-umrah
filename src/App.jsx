@@ -19,9 +19,10 @@ function App() {
     isOpen: false,
     payload: null,
   });
+  const [loading, setLoading] = useState(true);
 
   return (
-    <AppContext.Provider value={{ packages, setPackages }}>
+    <AppContext.Provider value={{ packages, setPackages, loading, setLoading }}>
       <main className="max-w-screen min-h-screen font-baloo">
         <Hero />
         <Copy />
