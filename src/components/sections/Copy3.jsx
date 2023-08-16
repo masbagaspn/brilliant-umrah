@@ -26,7 +26,7 @@ const Copy3 = () => {
         </div>
       </div>
       <img
-        src="/assets/images/bg-copy-3.png"
+        src="/assets/images/bg-copy-3.webp"
         className="absolute bottom-0 right-0 w-1/2 opacity-10 lg:h-[100%] lg:w-auto lg:opacity-100"
       />
     </section>

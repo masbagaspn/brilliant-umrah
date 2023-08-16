@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img
-          src="/assets/images/hero-image.jpg"
+          src="/assets/images/hero-image.webp"
           alt="hero-image"
           className="w-full h-full object-cover object-center"
         />

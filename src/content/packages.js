@@ -1,7 +1,7 @@
 const packages = [
   {
     name: "Paket Ekslusif 12 Hari",
-    thumbnail: "/assets/images/eksklusif.jpg",
+    thumbnail: "/assets/images/eksklusif.webp",
     packages: [
       {
         name: "Paket A",
@@ -163,7 +163,7 @@ const packages = [
   },
   {
     name: "Paket Reguler 12 Hari",
-    thumbnail: "/assets/images/thumbnail.jpg",
+    thumbnail: "/assets/images/thumbnail.webp",
     packages: [
       {
         name: "Paket A",
@@ -317,7 +317,7 @@ const packages = [
   },
   {
     name: "Paket Reguler 9 Hari",
-    thumbnail: "/assets/images/thumbnail.jpg",
+    thumbnail: "/assets/images/thumbnail.webp",
     packages: [
       {
         name: "Paket A",
@@ -441,7 +441,7 @@ const packages = [
   },
   {
     name: "Paket Reguler 16 Hari",
-    thumbnail: "/assets/images/thumbnail.jpg",
+    thumbnail: "/assets/images/thumbnail.webp",
     packages: [
       {
         name: "Paket A",
@@ -549,7 +549,7 @@ const packages = [
   },
   {
     name: "Paket Reguler 12 Hari Plus Dubai",
-    thumbnail: "/assets/images/dubai.jpg",
+    thumbnail: "/assets/images/dubai.webp",
     packages: [
       {
         name: "Paket A",
@@ -629,7 +629,7 @@ const packages = [
   },
   {
     name: "Paket Reguler 15 Hari Plus Aqsho",
-    thumbnail: "/assets/images/al-aqsa.jpg",
+    thumbnail: "/assets/images/al-aqsa.webp",
     packages: [
       {
         name: "Paket A",

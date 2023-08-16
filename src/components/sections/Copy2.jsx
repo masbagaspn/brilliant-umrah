@@ -15,7 +15,7 @@ const Copy2 = () => {
         </button>
       </div>
       <img
-        src="/assets/images/bg-copy-2.png"
+        src="/assets/images/bg-copy-2.webp"
         alt="bg-img"
         className="absolute left-0 bottom-0 w-1/2 h-auto lg:h-full lg:w-auto object-cover z-0 opacity-10 lg:opacity-100 pointer-events-none"
       />
