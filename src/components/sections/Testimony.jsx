@@ -1,8 +1,14 @@
+import clsx from "clsx";
 import testimonies from "../../content/testimony";
 
 const Testimony = () => {
   return (
-    <section className="w-full flex flex-col bg-blue-primary py-12 px-8 lg:px-20">
+    <section
+      className={clsx(
+        "w-full flex flex-col py-12 px-8 lg:px-20",
+        "bg-[url('/assets/images/bg-blue.png')] bg-cover bg-top bg-no-repeat"
+      )}
+    >
       <h2 className="section-title text-center text-white mb-8">
         Apa Kata Mereka?
       </h2>

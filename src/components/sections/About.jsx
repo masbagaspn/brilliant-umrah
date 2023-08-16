@@ -1,6 +1,13 @@
+import clsx from "clsx";
+
 const About = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-4 py-12 px-8 bg-blue-primary lg:py-20">
+    <section
+      className={clsx(
+        "relative w-full flex flex-col items-center gap-4 py-12 px-8 lg:py-20",
+        "bg-[url('assets/images/bg-blue.png')] bg-center bg-no-repeat bg-cover"
+      )}
+    >
       <img
         src="/assets/images/logo/logo-briliant.png"
         alt="logo"

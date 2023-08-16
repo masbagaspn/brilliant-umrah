@@ -8,7 +8,7 @@
   }
 
   .paragraph {
-    @apply text-sm font-baloo md:text-base lg:text-lg;
+    @apply text-sm font-baloo md:text-base lg:text-base;
   }
 
   .detail-title {

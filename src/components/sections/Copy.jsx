@@ -1,6 +1,13 @@
+import clsx from "clsx";
+
 const Copy = () => {
   return (
-    <section className="w-full h-fit flex flex-col px-8 py-12 bg-blue-secondary md:flex-row lg:px-20 gap-6">
+    <section
+      className={clsx(
+        "w-full h-fit flex flex-col px-8 py-12 bg-blue-secondary md:flex-row lg:px-20 gap-6",
+        "bg-[url('/assets/images/bg-white.png')] bg-top bg-cover bg-no-repeat"
+      )}
+    >
       <h2 className="section-title text-center text-blue-primary mb-8 md:w-1/3 md:text-left">
         Hadirkan Keberkahan dalam Setiap Perjalanan.
       </h2>
