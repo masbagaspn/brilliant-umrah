@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       className={clsx(
-        "w-full flex flex-col items-center gap-4 py-12 px-8 lg:py-20",
+        "w-full flex flex-col items-center gap-4 py-12 px-8 lg:py-20 bg-blue-primary",
         "bg-[url('assets/images/bg-blue.png')] bg-center bg-no-repeat bg-cover"
       )}
     >
