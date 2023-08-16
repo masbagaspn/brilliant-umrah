@@ -8,12 +8,12 @@ const PenanggungJawab = () => {
         {pj.map((p) => (
           <div
             key={p.name}
-            className="p-4 flex flex-col gap-4 bg-blue-primary rounded-lg text-blue-secondary"
+            className="w-fit p-4 flex flex-col gap-4 bg-blue-primary rounded-lg text-blue-secondary"
           >
             <img
               src={p.image}
               alt={`foto-${p.name}`}
-              className="w-full h-auto aspect-square object-cover object-top rounded-md lg:w-64"
+              className="h-auto aspect-square object-cover object-top rounded-md w-64"
             />
             <div>
               <h3 className="font-medium">{p.name}</h3>

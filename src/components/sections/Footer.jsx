@@ -4,6 +4,11 @@ const Footer = () => {
   return (
     <footer className="w-full bg-blue-primary text-blue-secondary font-baloo lg:grid lg:grid-cols-3">
       <div className="flex flex-col gap-4 p-8 border-b border-blue-secondary/70 lg:border-none">
+        <img
+          src="/assets/images/logo/logo-briliant.png"
+          alt="logo"
+          className="w-12 h-auto"
+        />
         <span>PT. BRILLIANT TIGA PERKASA</span>
         <span>
           Jl. Wisma Menanggal 1 No. 20 Gayungan Surabaya,
@@ -11,7 +16,7 @@ const Footer = () => {
           Jawa Timur, Indonesia, 60234
         </span>
       </div>
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full items-center justify-center hidden lg:flex">
         <img
           src="/assets/images/logo/logo-briliant.png"
           className="w-32 h-auto"

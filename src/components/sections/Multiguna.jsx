@@ -6,7 +6,7 @@ const Multiguna = () => {
       <div
         className={clsx(
           "w-full flex flex-col p-4 pb-8 rounded-lg text-green-secondary lg:w-3/4 lg:flex-row lg:p-8 lg:gap-8 lg:items-center",
-          "bg-[url('/assets/images/bg-white.png')] bg-cover bg-top bg-no-repeat"
+          "bg-[url('/assets/images/bg-green.png')] bg-cover bg-top bg-no-repeat"
         )}
       >
         <div className="flex flex-col items-center gap-4 mb-4 lg:mb-0 lg:flex-row">

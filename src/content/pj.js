@@ -7,7 +7,7 @@ const pj = [
   {
     name: "Dra. Hj. Hermin Rachman, M.M.",
     title: "Komisaris PT. Brilliant Tiga Perkasa",
-    image: "/assets/images/pj-2.jpg",
+    image: "/assets/images/pj-2.jpeg",
   },
 ];
 
