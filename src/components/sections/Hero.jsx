@@ -9,7 +9,7 @@ const Hero = () => {
     <section
       className={clsx(
         "relative w-full h-screen flex items-center justify-center overflow-hidden",
-        "bg-[url('assets/images/hero-image.webp')] bg-cover bg-center bg-no-repeat"
+        "bg-[url('/assets/images/hero-image.webp')] bg-cover bg-center bg-no-repeat"
       )}
     >
       <motion.div
