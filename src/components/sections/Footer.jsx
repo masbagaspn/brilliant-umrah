@@ -29,31 +29,26 @@ const Footer = () => {
       <div className="p-8 flex flex-col gap-4">
         <span className="uppercase font-medium">Kontak Kami</span>
         <div className="flex flex-col gap-2">
-          {socials.map((soc) =>
-            soc.name !== "phone" ? (
-              <a
-                href={soc.link}
-                target={"_blank"}
-                key={soc.name}
-                className={clsx("inline-flex gap-2 items-center", {
-                  "hover:opacity-30 cursor-pointer": soc.name !== "phone",
-                })}
-                rel="noreferrer"
-              >
-                {soc.name === "instagram" ? (
-                  <RiInstagramLine />
-                ) : (
-                  <HiOutlineMail />
-                )}
-                <span>{soc.text}</span>
-              </a>
-            ) : (
-              <span key={soc.name} className="inline-flex items-center gap-2">
+          {socials.map((soc) => (
+            <a
+              href={soc.link}
+              target={"_blank"}
+              key={soc.name}
+              className={clsx(
+                "inline-flex gap-2 items-center hover:opacity-30 cursor-pointer"
+              )}
+              rel="noreferrer"
+            >
+              {soc.name === "instagram" ? (
+                <RiInstagramLine />
+              ) : soc.name === "phone" ? (
                 <HiOutlineDevicePhoneMobile />
-                {soc.text}
-              </span>
-            )
-          )}
+              ) : (
+                <HiOutlineMail />
+              )}
+              <span>{soc.text}</span>
+            </a>
+          ))}
         </div>
       </div>
     </footer>

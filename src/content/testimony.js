@@ -1,21 +1,23 @@
 const testimonies = [
   {
-    name: "Tasminah",
+    name: "Pak Firdauf",
+    as: "Direktur Cleo",
     text: [
-      "Terus lanjutkan yang sudah baik Pak Didik, akan saya dukung terus Brilliant sampai mendunia dan go public!",
-      "Semangat untuk tim Brilliant, sangat memuaskan. Semoga setiap bulan dan tahun, kita bisa berkali-kali berangkat hingga Allah ridho kepada kita semua.",
+      "Saya berangkat dengan istri, dan so far pelayanan memang oke. Ada beberapa kendala cuma support nya Pak Didik luar biasa.",
     ],
   },
   {
-    name: "Ust. Aulia Nugrah",
+    name: "Pak Deddy",
+    as: "Pilot Air Asia",
     text: [
-      "Brilliant pelayanannya profesional. Semoga selalu meningkat dalam kebaikan!",
+      "Alhamdulillah, secara keseluruhan lancar semua di sana. Mudah-mudahan tahun depan bisa gabung lagi semua.",
     ],
   },
   {
-    name: "H. Abdul Aziz",
+    name: "Ust. Aulia Nugraha",
+    as: "Tokoh Spiritual",
     text: [
-      "Brilliant memiliki staf yang ramah dan mampu menciptakan suasana kekeluargaan. Ketika saya berangkat umrah Tahun 2015 lalu, seperti umrah dengan keluarga sendiri.",
+      "Alhamdulillah, kesan kami bersama Brilliant Travel ya pelayanannya bagus, profesional sejak awal sampai pemberangkatan hingga akhir semua tertata. Semoga Brilliant Travel dapat berkembang terus sampai selamanya.",
     ],
   },
 ];

@@ -10,9 +10,14 @@ const Copy2 = () => {
           Brilliant Umrah solusinya! Brilliant menjamin keberangkatan Anda tanpa
           menunggu lama. Bersama Brilliant, berangkat cepat harga bersahabat.
         </p>
-        <button className="w-fit px-4 py-2 text-blue-secondary bg-blue-primary rounded-full text-xs lg:text-sm">
+        <a
+          href="https://gass.co.id/cta"
+          target="_blank"
+          className="w-fit px-4 py-2 text-blue-secondary bg-blue-primary rounded-full text-xs lg:text-sm"
+          rel="noreferrer"
+        >
           KONSULTASIKAN PAKET UMRAHMU
-        </button>
+        </a>
       </div>
       <img
         src="/assets/images/bg-copy-2.webp"

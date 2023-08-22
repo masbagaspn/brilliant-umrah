@@ -15,10 +15,13 @@ const Testimony = () => {
       <div className="w-full flex flex-col gap-12 lg:flex-row lg:gap-8">
         {testimonies.map((testimony) => (
           <div
-            className="relative w-full h-fit bg-blue-secondary text-blue-primary p-4 rounded-md space-y-4 drop-shadow-md lg:p-6"
+            className="relative w-full h-fit bg-blue-secondary text-blue-primary p-4 rounded-md drop-shadow-md lg:p-6"
             key={testimony.name}
           >
             <h3 className="font-bold lg:text-lg">{testimony.name}</h3>
+            <p className="text-xs font-medium mb-2 lg:mb-4 opacity-70">
+              {testimony.as}
+            </p>
             <p className="text-sm lg:text-base">{testimony.text}</p>
             <div className="absolute w-6 h-6 left-0 -bottom-5">
               <svg

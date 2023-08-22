@@ -1,4 +1,4 @@
-const packages = [
+const paketumrah = [
   {
     name: "Paket Ekslusif 12 Hari",
     thumbnail: "/assets/images/eksklusif.webp",
@@ -724,4 +724,4 @@ const packages = [
   },
 ];
 
-export default packages;
+export default paketumrah;

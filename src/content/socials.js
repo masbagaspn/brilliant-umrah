@@ -1,8 +1,8 @@
 const socials = [
   {
     name: "phone",
-    text: "08123528916",
-    link: "https://wa.me/+6281232528916",
+    text: "081222331686",
+    link: "https://gass.co.id/cta",
   },
   {
     name: "email",

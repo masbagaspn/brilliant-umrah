@@ -304,9 +304,6 @@ const PackageModal = () => {
             <span>Harga</span>
             <span className="text-xl font-semibold ">{selected.price}</span>
           </span>
-          <button className="text-sm uppercase px-4 py-2 bg-blue-primary text-blue-secondary rounded-full">
-            Hubungi Kami
-          </button>
         </div>
       </motion.div>
     </motion.div>
