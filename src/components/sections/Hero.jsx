@@ -1,18 +1,22 @@
-import { motion } from "framer-motion";
-import { useContext } from "react";
-import { AppContext } from "../../App";
+// import { motion } from "framer-motion";
+// import { useContext } from "react";
+// import { AppContext } from "../../App";
 import clsx from "clsx";
 
 const Hero = () => {
-  const { loading, setLoading } = useContext(AppContext);
+  // const { loading, setLoading } = useContext(AppContext);
   return (
     <section
       className={clsx(
-        "relative w-full h-screen flex items-center justify-center overflow-hidden",
-        "bg-[url('/assets/images/hero-image.webp')] bg-cover bg-center bg-no-repeat"
+        "relative w-full min-h-screen flex items-center justify-center overflow-hidden"
+        // "bg-[url('/assets/images/section-1.webp')] bg-cover bg-top bg-no-repeat"
       )}
     >
-      <motion.div
+      <img
+        src="/assets/images/section-1.webp"
+        className="object-cover object-top"
+      />
+      {/* <motion.div
         initial={{ opacity: 0, y: 200 }}
         animate={{ opacity: loading ? 0 : 1, y: loading ? 200 : 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
@@ -39,7 +43,7 @@ const Hero = () => {
         >
           Pelajari Lebih Lanjut
         </a>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };
