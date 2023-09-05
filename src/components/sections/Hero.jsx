@@ -8,13 +8,17 @@ const Hero = () => {
   return (
     <section
       className={clsx(
-        "relative w-full min-h-screen flex items-center justify-center overflow-hidden"
+        "relative w-full h-screen flex items-center justify-center overflow-hidden"
         // "bg-[url('/assets/images/section-1.webp')] bg-cover bg-top bg-no-repeat"
       )}
     >
       <img
         src="/assets/images/section-1.webp"
-        className="object-cover object-top"
+        className="hidden lg:block w-full h-full object-cover object-top"
+      />
+      <img
+        src="/assets/images/section-1-mobile.jpg"
+        className="lg:hidden w-full h-full object-cover object-top"
       />
       {/* <motion.div
         initial={{ opacity: 0, y: 200 }}

@@ -11,7 +11,7 @@ import { AppContext } from "../../App";
 const PackageModal = () => {
   const { packages, setPackages } = useContext(AppContext);
   const [selected, setSelected] = useState(packages.payload.packages[0]);
-  const [isIteneraryOpen, setIsIteneraryOpen] = useState(false);
+  const [isIteneraryOpen, setIsIteneraryOpen] = useState(true);
   const [isDetailOpen, setIsDetailOpen] = useState(true);
 
   const handleClose = () => {
