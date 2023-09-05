@@ -8,18 +8,17 @@ const Hero = () => {
   return (
     <section
       className={clsx(
-        "relative w-full h-screen flex items-center justify-center overflow-hidden"
-        // "bg-[url('/assets/images/section-1.webp')] bg-cover bg-top bg-no-repeat"
+        "relative w-full h-screen overflow-hidden",
+        "bg-[url('/assets/images/section-1-mobile.jpg')] bg-cover bg-top bg-no-repeat",
+        "lg:bg-[url('/assets/images/section-1.webp')]"
       )}
     >
-      <img
-        src="/assets/images/section-1.webp"
-        className="hidden lg:block w-full h-full object-cover object-top"
-      />
-      <img
-        src="/assets/images/section-1-mobile.jpg"
-        className="lg:hidden w-full h-full object-cover object-top"
-      />
+      <a
+        href="#main"
+        className="absolute top-[40%] lg:bottom-1/3 left-1/2 -translate-x-1/2 w-fit text-sm px-4 py-2 bg-blue-primary rounded-full uppercase font-baloo text-white"
+      >
+        Pelajari Lebih Lanjut
+      </a>
       {/* <motion.div
         initial={{ opacity: 0, y: 200 }}
         animate={{ opacity: loading ? 0 : 1, y: loading ? 200 : 0 }}
@@ -41,12 +40,6 @@ const Hero = () => {
           Allah tidak memanggil orang yang mampu, <br />
           tetapi Allah memampukan orang yang terpanggil.
         </p>
-        <a
-          href="#main"
-          className="w-fit text-sm px-4 py-2 bg-blue-primary rounded-full uppercase font-baloo"
-        >
-          Pelajari Lebih Lanjut
-        </a>
       </motion.div> */}
     </section>
   );
