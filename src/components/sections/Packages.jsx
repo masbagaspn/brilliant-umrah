@@ -29,6 +29,7 @@ const Packages = () => {
             className="w-full h-auto flex flex-col gap-2 bg-white drop-shadow-md p-4 rounded-lg"
           >
             <img
+              loading="lazy"
               src={p.thumbnail}
               alt={`Flyer ${p.name}`}
               className="w-full h-auto aspect-[3/2] object-cover object-center rounded-md"
