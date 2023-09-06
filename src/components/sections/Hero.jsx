@@ -15,7 +15,11 @@ const Hero = () => {
     >
       <a
         href="#main"
-        className="absolute top-[40%] lg:bottom-1/3 left-1/2 -translate-x-1/2 w-fit text-sm px-4 py-2 bg-blue-primary rounded-full uppercase font-baloo text-white"
+        className={clsx(
+          "absolute bottom-[10%] lg:bottom-[15%] left-1/2 -translate-x-1/2",
+          "bg-blue-primary text-white text-center rounded-full uppercase font-baloo whitespace-normal hover:bg-opacity-80",
+          "w-[240px] text-lg px-4 py-2 "
+        )}
       >
         Pelajari Lebih Lanjut
       </a>
