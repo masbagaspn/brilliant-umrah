@@ -34,12 +34,12 @@ const Packages = () => {
               className="w-full h-auto aspect-[3/2] object-cover object-center rounded-md"
             />
             <div className="flex flex-col gap-2">
-              <h3 className="text-sm font-medium md:text-base lg:text-lg">
+              <h3 className="text-xs font-medium md:text-base lg:text-lg">
                 {p.name}
               </h3>
               <button
                 onClick={() => handleOpen(p)}
-                className="w-full text-xs text-blue-secondary py-2 bg-blue-primary rounded-md"
+                className="w-full text-xs text-blue-secondary py-2 bg-blue-primary rounded-md hover:bg-opacity-80"
               >
                 Detail Paket
               </button>
