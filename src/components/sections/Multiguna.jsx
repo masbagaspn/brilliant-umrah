@@ -9,7 +9,7 @@ const Multiguna = () => {
           "bg-[url('/assets/images/bg-green.png')] bg-cover bg-top bg-no-repeat bg-opacity-10"
         )}
       >
-        <div className="w-12 lg:w-1/3 flex items-start">
+        <div className="w-12 lg:w-1/3 flex items-start justify-center">
           <img
             src="/assets/images/logo/logo-briliant.png"
             alt="logo"
