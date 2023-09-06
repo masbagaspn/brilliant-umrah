@@ -13,7 +13,7 @@ const Copy2 = () => {
         <a
           href="https://gass.co.id/cta"
           target="_blank"
-          className="w-fit px-4 py-2 text-blue-secondary bg-blue-primary rounded-full text-xs lg:text-sm"
+          className="w-fit px-4 py-2 text-blue-secondary bg-blue-primary rounded-full text-xs lg:text-sm hover:bg-opacity/80"
           rel="noreferrer"
         >
           KONSULTASIKAN PAKET UMRAHMU
