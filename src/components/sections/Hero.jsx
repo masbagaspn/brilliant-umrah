@@ -16,12 +16,12 @@ const Hero = () => {
       <a
         href="#main"
         className={clsx(
-          "absolute bottom-[10%] lg:bottom-[15%] left-1/2 -translate-x-1/2",
-          "bg-blue-primary text-white text-center rounded-full uppercase font-baloo whitespace-normal hover:bg-opacity-80",
-          "w-[240px] text-lg px-4 py-2 "
+          "absolute bottom-[10%] left-1/2 -translate-x-1/2",
+          "bg-blue-primary text-white text-center rounded-full uppercase font-baloo hover:bg-opacity-80",
+          "w-[240px] lg:w-[344px] text-xs lg:text-lg px-6 py-2.5"
         )}
       >
-        Pelajari Lebih Lanjut
+        mulai perjalananmu sekarang
       </a>
     </section>
   );
